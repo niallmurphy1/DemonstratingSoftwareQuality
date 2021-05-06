@@ -37,7 +37,7 @@ public class ControllerTest {
        StudentGrade exampleGrade1 = new StudentGrade("Account Check", 5);
        StudentGrade exampleGrade2 = new StudentGrade("Balance Sheet", 3);
        StudentGrade exampleGrade3 = new StudentGrade("COA", 4);
-       StudentGrade exampleGrade4 = new StudentGrade("Endowment", 5);
+       StudentGrade exampleGrade4 = new StudentGrade("Endowment", 4);
 
        exampleGrades.add(exampleGrade1);
        exampleGrades.add(exampleGrade2);
@@ -50,7 +50,7 @@ public class ControllerTest {
 
        Rubric testRubric = new Rubric("Accounting", testStudents, criteria);
 
-       assertEquals(controller.getAverage(testRubric), 4.25, 0.0);
+       assertEquals(controller.getAverage(testRubric), 4.0, 0.0);
 
 
    }
