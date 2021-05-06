@@ -2,20 +2,18 @@ package entities;
 
 import java.util.ArrayList;
 
-public class Rubric {
-
-    String name;
-    ArrayList<String> criteria;
+public class Topic {
 
 
-    public Rubric(){
+    private String name;
+    private ArrayList<Rubric> grades;
+
+
+    public Topic(){
+
 
     }
 
-    public Rubric(String name, ArrayList<String> criteria) {
-        this.name = name;
-        this.criteria = criteria;
-    }
 
     public String getName() {
         return name;
@@ -25,19 +23,25 @@ public class Rubric {
         this.name = name;
     }
 
-    public ArrayList<String> getCriteria() {
-        return criteria;
+
+    public Topic(String name, ArrayList<Rubric> rubrics) {
+        this.name = name;
+        this.grades = rubrics;
     }
 
-    public void setCriteria(ArrayList<String> criteria) {
-        this.criteria = criteria;
+    public ArrayList<Rubric> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(ArrayList<Rubric> grades) {
+        this.grades = grades;
     }
 
     @Override
     public String toString() {
-        return "Rubric{" +
+        return "Topic{" +
                 "name='" + name + '\'' +
-                ", criteria=" + criteria +
+                ", grades=" + grades +
                 '}';
     }
 }
