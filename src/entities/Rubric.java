@@ -2,46 +2,58 @@ package entities;
 
 import java.util.ArrayList;
 
-public class Topic {
+public class Rubric {
 
 
-    private String name;
-    private ArrayList<Rubric> grades;
+    private String topicName;
+    private ArrayList<Student> students;
+    private ArrayList<String> criteria;
 
+    public Rubric(){
 
-    public Topic(){
-
+        students = new ArrayList<>();
+        criteria = new ArrayList<>();
 
     }
 
-
-    public String getName() {
-        return name;
+    public Rubric(String topicName, ArrayList<Student> students, ArrayList<String> criteria) {
+        this.topicName = topicName;
+        this.students = students;
+        this.criteria = criteria;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getTopicName() {
+        return topicName;
+    }
+
+    public void setTopicName(String topicName) {
+        this.topicName = topicName;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
     }
 
 
-    public Topic(String name, ArrayList<Rubric> rubrics) {
-        this.name = name;
-        this.grades = rubrics;
+    public ArrayList<String> getCriteria() {
+        return criteria;
     }
 
-    public ArrayList<Rubric> getGrades() {
-        return grades;
+    public void setCriteria(ArrayList<String> criteria) {
+        this.criteria = criteria;
     }
 
-    public void setGrades(ArrayList<Rubric> grades) {
-        this.grades = grades;
-    }
 
     @Override
     public String toString() {
-        return "Topic{" +
-                "name='" + name + '\'' +
-                ", grades=" + grades +
+        return "Rubric{" +
+                "topicName='" + topicName + '\'' +
+                ", students=" + students +
+                ", criteria=" + criteria +
                 '}';
     }
 }

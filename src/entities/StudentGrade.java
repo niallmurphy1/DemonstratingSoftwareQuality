@@ -1,16 +1,18 @@
 package entities;
 
-public class Rubric {
+public class StudentGrade {
 
     private String criterion;
     private int grade;
 
-    public Rubric(String criterion, int grade) {
+    public StudentGrade(String criterion, int grade) {
         this.criterion = criterion;
         this.grade = grade;
     }
 
-    public Rubric(){}
+    public StudentGrade(){
+
+    }
 
 
     public String getCriterion() {
@@ -31,7 +33,7 @@ public class Rubric {
 
     @Override
     public String toString() {
-        return "Rubric{" +
+        return "StudentGrade{" +
                 "criterion='" + criterion + '\'' +
                 ", grade=" + grade +
                 '}';

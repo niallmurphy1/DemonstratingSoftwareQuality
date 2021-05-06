@@ -4,18 +4,14 @@ import java.util.ArrayList;
 
 public class Student {
 
-
-
-
     private String name;
-    private ArrayList<Integer> grades;
+private ArrayList<StudentGrade> grades;
 
-
-    public Student(){
-
+    public Student() {
+        grades = new ArrayList<>();
     }
 
-    public Student(String name, ArrayList<Integer> grades) {
+    public Student(String name, ArrayList<StudentGrade> grades) {
         this.name = name;
         this.grades = grades;
     }
@@ -28,11 +24,11 @@ public class Student {
         this.name = name;
     }
 
-    public ArrayList<Integer> getGrades() {
+    public ArrayList<StudentGrade> getGrades() {
         return grades;
     }
 
-    public void setGrades(ArrayList<Integer> grades) {
+    public void setGrades(ArrayList<StudentGrade> grades) {
         this.grades = grades;
     }
 
