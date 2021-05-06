@@ -26,6 +26,10 @@ public class Controller {
     private ArrayList<Rubric> rubrics = new ArrayList<>();
     private ArrayList<Student> students = new ArrayList<>();
     private ArrayList<StudentGrade> grades = new ArrayList<>();
+    double standardDeviation = 0;
+    double res = 0.0;
+    double sq = 0.0;
+
 
 
 
@@ -272,7 +276,7 @@ public class Controller {
 
     }
 
-    public double getAverage(Rubric rubric){
+    public double getAverageOfRubric(Rubric rubric){
 
         int gradesSum = 0;
         int numGrades =0;
@@ -289,6 +293,92 @@ public class Controller {
 
 
         return gradesSum/numGrades;
+    }
+
+    public int getMinGradeInRubric(Rubric rubric){
+
+        ArrayList<Integer> grades = new ArrayList<>();
+
+
+        for(Student student : rubric.getStudents()){
+
+            for(StudentGrade studentGrade: student.getGrades()){
+
+               grades.add(studentGrade.getGrade());
+
+            }
+
+        }
+
+        return grades.stream()
+                .reduce(Integer::min)
+                .get();
+
+    }
+
+
+    public int getMaxGradeRubric(Rubric rubric){
+
+        ArrayList<Integer> grades = new ArrayList<>();
+
+
+        for(Student student : rubric.getStudents()){
+
+            for(StudentGrade studentGrade: student.getGrades()){
+
+                grades.add(studentGrade.getGrade());
+
+            }
+
+        }
+
+        return grades.stream()
+                .reduce(Integer::max)
+                .get();
+
+    }
+
+    public double getStandardDeviationOfRubric(Rubric rubric) {
+
+        double mean = getAverageOfRubric(rubric);
+
+        System.out.println("mean: " + mean);
+
+        int sum = 0;
+
+        ArrayList<Integer> grades = new ArrayList<>();
+
+
+        for (Student student : rubric.getStudents()) {
+
+            for (StudentGrade studentGrade : student.getGrades()) {
+
+                grades.add(studentGrade.getGrade());
+
+            }
+
+        }
+        int n = grades.size();
+
+        for (int i = 0; i < n; i++) {
+            sum = sum + grades.get(i);
+        }
+        mean = sum/(n);
+
+        for (int i = 0; i < n; i++) {
+
+            standardDeviation
+                    = standardDeviation + Math.pow((grades.get(i) - mean), 2);
+
+        }
+
+        sq = standardDeviation / n;
+        res = Math.sqrt(sq);
+
+
+
+
+        return res;
     }
 
     public void addStudents(Rubric rubric){

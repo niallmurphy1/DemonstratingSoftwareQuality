@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a797e66-3764-4fa1-9511-0c533dda09f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/driver/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/driver/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/StudentGrade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="160">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#261#262#0" expanded="true" />
@@ -58,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
+            <state relative-caret-position="282">
+              <caret line="370" lean-forward="true" selection-start-line="370" selection-end-line="370" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="50" column="72" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+            <state relative-caret-position="339">
+              <caret line="73" column="86" selection-start-line="73" selection-start-column="86" selection-end-line="73" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RubricTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
+            <state relative-caret-position="315">
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,8 +136,8 @@
         <option value="$PROJECT_DIR$/src/entities/StudentGrade.java" />
         <option value="$PROJECT_DIR$/src/entities/Student.java" />
         <option value="$PROJECT_DIR$/test/RubricTest.java" />
-        <option value="$PROJECT_DIR$/src/driver/Controller.java" />
         <option value="$PROJECT_DIR$/test/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/driver/Controller.java" />
       </list>
     </option>
   </component>
@@ -203,20 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest.averageGradeTest">
-    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="driver.Controller" />
-      <module name="DemonstratingSoftwareQuality" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="driver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ControllerTest.getStandardDeviationRubric">
     <configuration name="ControllerTest.averageGradeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemonstratingSoftwareQuality" />
       <option name="PACKAGE_NAME" value="" />
@@ -237,20 +225,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RubricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.getStandardDeviationRubric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemonstratingSoftwareQuality" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RubricTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="getStandardDeviationRubric" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RubricTest.rubricNullStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.maxGradeRubric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemonstratingSoftwareQuality" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RubricTest" />
-      <option name="METHOD_NAME" value="rubricNullStudentTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="maxGradeRubric" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.minGradeRubricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemonstratingSoftwareQuality" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="minGradeRubricTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest.getStandardDeviationRubric" />
+        <item itemvalue="JUnit.ControllerTest.maxGradeRubric" />
+        <item itemvalue="JUnit.ControllerTest.minGradeRubricTest" />
         <item itemvalue="JUnit.ControllerTest.averageGradeTest" />
         <item itemvalue="JUnit.ControllerTest.getAllRubricsTest" />
-        <item itemvalue="Application.Controller" />
-        <item itemvalue="JUnit.RubricTest" />
-        <item itemvalue="JUnit.RubricTest.rubricNullStudentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -280,35 +279,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.06 at 20h 03m 27s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 31m 31s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.06 at 20h 03m 30s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 32m 09s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.06 at 20h 04m 34s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 32m 45s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.06 at 20h 04m 42s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 33m 25s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.06 at 20h 33m 36s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 33m 46s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_averageGradeTest - 2021.05.06 at 20h 34m 13s.xml">
-      <configuration name="ControllerTest.averageGradeTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 34m 20s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_averageGradeTest - 2021.05.06 at 20h 34m 17s.xml">
-      <configuration name="ControllerTest.averageGradeTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 34m 41s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_averageGradeTest - 2021.05.06 at 20h 38m 01s.xml">
-      <configuration name="ControllerTest.averageGradeTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 36m 05s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_averageGradeTest - 2021.05.06 at 20h 38m 23s.xml">
-      <configuration name="ControllerTest.averageGradeTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 40m 28s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_averageGradeTest - 2021.05.06 at 20h 38m 40s.xml">
-      <configuration name="ControllerTest.averageGradeTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 42m 36s.xml">
+      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -339,7 +338,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.15223464" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.39664805" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -390,6 +389,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+          <folding>
+            <element signature="e#6336#6337#0" expanded="true" />
+            <element signature="e#6404#6405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Rubric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -411,20 +421,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
-          <folding>
-            <element signature="e#6336#6337#0" expanded="true" />
-            <element signature="e#6404#6405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/StudentGrade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="160">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#261#262#0" expanded="true" />
@@ -439,19 +438,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="286" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/RubricTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
+        <state relative-caret-position="315">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -459,10 +448,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="649" column="28" selection-start-line="649" selection-start-column="28" selection-end-line="649" selection-end-column="28" />
+          <folding>
+            <element signature="e#26000#26001#0" expanded="true" />
+            <element signature="e#26047#26048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="666" column="26" selection-start-line="666" selection-start-column="26" selection-end-line="666" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="50" column="72" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+        <state relative-caret-position="339">
+          <caret line="73" column="86" selection-start-line="73" selection-start-column="86" selection-end-line="73" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="370" lean-forward="true" selection-start-line="370" selection-end-line="370" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
