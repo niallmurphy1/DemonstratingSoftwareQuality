@@ -312,7 +312,7 @@
     <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$Controller.ic" NAME="Controller Coverage Results" MODIFIED="1620416715196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>driver.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620418049191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620418922334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
