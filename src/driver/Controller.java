@@ -409,19 +409,35 @@ public class Controller {
     }
 
 
-    public void getAverageOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
+    public String getAverageOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
 
+        String result ="";
+        ArrayList<StudentGrade> gradesMatchingCriterion = new ArrayList<>();
+        int sumOfGrades = 0;
 
+        for(Student student: students){
+
+            for(StudentGrade studentGrade: student.getGrades()){
+
+                if(studentGrade.getCriterion().equalsIgnoreCase(criteriaName)){
+                    gradesMatchingCriterion.add(studentGrade);
+                }else{
+                    result = "Criterion not found!";
+                }
+            }
+        }
+
+        return result;
 
     }
 
-    public void getMaxOfCriteria(){}
+    public void getMaxOfCriteria(ArrayList<Student> students, String criteriaName){}
 
 
-    public void getMinOfCriteria(){}
+    public void getMinOfCriteria(ArrayList<Student> students, String criteriaName){}
 
 
-    public void getStandardDeviationOfSpecificCriteria(){
+    public void getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
 
     }
 

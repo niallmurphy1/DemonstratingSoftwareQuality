@@ -109,5 +109,7 @@ public class ControllerTest {
    public void  AverageCriteriaTestNonExistingCriteria(){
         rubrics.add(testRubric());
 
+        assertEquals(controller.getAverageOfSpecificCriteria(testRubric().getStudents(), ""), "Criterion not found!");
+
    }
 }
