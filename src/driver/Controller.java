@@ -18,8 +18,8 @@ public class Controller {
 
 
         //TODO: comment these methods out to run Controller tests
-        //initialRubrics();
-        //mainMenu();
+       // initialRubrics();
+       // mainMenu();
 
     }
 
@@ -34,11 +34,11 @@ public class Controller {
 
 
 
-    public void initialRubrics(){
+    public ArrayList<Rubric> initialRubrics(){
 
         //Create example Rubric
 
-               ArrayList<Student> exampleStudents = new ArrayList<>();
+        ArrayList<Student> exampleStudents = new ArrayList<>();
 
         ArrayList<StudentGrade> exampleGrades = new ArrayList<>();
         StudentGrade exampleGrade1 = new StudentGrade("Account Check", 5);
@@ -65,6 +65,8 @@ public class Controller {
         grades.add(exampleGrade4);
         students.add(exampleStudent);
         rubrics.add(exampleRubric);
+
+        return rubrics;
 
     }
 
@@ -260,10 +262,10 @@ public class Controller {
 
             if(rubric.getTopicName().equalsIgnoreCase(topicName)){
 
-                System.out.println("Rubric found!");
+                System.out.println("Rubric found!\n");
                 System.out.println(rubric.toString());
 
-                System.out.println("Return to main menu? y/n");
+                System.out.println("\nReturn to main menu? y/n");
 
                 if(scan.next().equalsIgnoreCase("y")){
                     mainMenu();

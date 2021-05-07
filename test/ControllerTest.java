@@ -30,7 +30,7 @@ public class ControllerTest {
         StudentGrade exampleGrade1 = new StudentGrade("Account Check", 5);
         StudentGrade exampleGrade2 = new StudentGrade("Balance Sheet", 3);
         StudentGrade exampleGrade3 = new StudentGrade("COA", 4);
-        StudentGrade exampleGrade4 = new StudentGrade("Endowment", 4);
+        StudentGrade exampleGrade4 = new StudentGrade("Endowment", 5);
 
         exampleGrades.add(exampleGrade1);
         exampleGrades.add(exampleGrade2);
@@ -43,6 +43,15 @@ public class ControllerTest {
 
         return new Rubric("Accounting", testStudents, criteria);
 
+    }
+
+    @Test
+    public void initalRubricsTest(){
+
+        ArrayList<Rubric> rubrics = new ArrayList<>();
+        rubrics.add(testRubric());
+
+        assertEquals(controller.initialRubrics().toString(),rubrics.toString());
     }
 
    @Test
@@ -75,7 +84,7 @@ public class ControllerTest {
 
    @Test
     public void getStandardDeviationRubricTest(){
-        assertEquals(controller.getStandardDeviationOfRubric(testRubric()), .7071067811865476, 0.00);
+        assertEquals(controller.getStandardDeviationOfRubric(testRubric()), .8660254037844386, 0.00);
    }
 
    @Test
@@ -91,7 +100,7 @@ public class ControllerTest {
         String expectedResult = "Rubric max: 5"
                 + "\nRubric min: 3"
                 +"\nRubric average: 4.0"
-                +"\nRubric standard deviation: 0.7071067811865476";
+                +"\nRubric standard deviation: 0.8660254037844386";
         assertEquals(controller.showRubricStats("Accounting", rubrics), expectedResult);
    }
 
