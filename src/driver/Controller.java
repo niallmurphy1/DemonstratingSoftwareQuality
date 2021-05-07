@@ -29,6 +29,7 @@ public class Controller {
     double standardDeviation = 0;
     double res = 0.0;
     double sq = 0.0;
+    double sd = 0;
 
 
 
@@ -496,9 +497,69 @@ public class Controller {
     }
 
 
-//    public String getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
-//
-//    }
+    public String getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
+
+
+        String result ="";
+        ArrayList<StudentGrade> gradesMatchingCriterion = new ArrayList<>();
+        int sumOfGrades = 0;
+
+
+        for(Student student: students){
+
+            for(StudentGrade studentGrade: student.getGrades()){
+
+                if(studentGrade.getCriterion().equalsIgnoreCase(criteriaName)){
+                    gradesMatchingCriterion.add(studentGrade);
+                    sumOfGrades = sumOfGrades +studentGrade.getGrade();
+                }
+            }
+        }
+
+        System.out.println(sumOfGrades);
+
+        if(gradesMatchingCriterion.size() == 0){
+            result = "Criterion not found!";
+
+        }else{
+
+            ArrayList<Integer> gradeValues = new ArrayList<>();
+
+            System.out.println("Student grades: "+ gradesMatchingCriterion);
+            System.out.println("Student grades: size " + gradesMatchingCriterion.size());
+            System.out.println("sum of grades: " + sumOfGrades);
+            double mean = (sumOfGrades/Double.valueOf(gradesMatchingCriterion.size()));
+
+            for (int i = 0; i < gradesMatchingCriterion.size(); i++) {
+
+                gradeValues.add(gradesMatchingCriterion.get(i).getGrade());
+
+
+            }
+            System.out.println("Mean: " + mean);
+            for(int i = 0; i < gradeValues.size() ; i ++) {
+                System.out.println("Grade: " + gradeValues.get(i));
+                sd
+                        = sd + Math.pow((gradeValues.get(i) - mean), 2);
+
+                System.out.println("Standard dev: " + sd);
+            }
+
+            System.out.println("Size: " + gradeValues.size());
+            sq = sd / gradeValues.size();
+            res = Math.sqrt(sq);
+            result = String.valueOf(res);
+        }
+
+        return result;
+
+    }
+
+    public String showCriteriaStats(ArrayList<Student> students, String criteriaName){
+
+        return ";";
+
+    }
 
     public void addStudents(Rubric rubric){
 
@@ -534,6 +595,8 @@ public class Controller {
 
 
     }
+
+
 
 
     void returnToMainMenu(){

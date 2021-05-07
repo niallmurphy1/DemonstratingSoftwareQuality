@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="498" column="6" lean-forward="true" selection-start-line="498" selection-start-column="6" selection-end-line="500" selection-end-column="7" />
+            <state relative-caret-position="420">
+              <caret line="544" column="58" lean-forward="true" selection-start-line="544" selection-start-column="58" selection-end-line="544" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="137" column="49" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+            <state relative-caret-position="332">
+              <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,6 +137,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>topicName</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -235,25 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ControllerTest.minCriteriaTestNonExisting">
-    <configuration name="All in DemonstratingSoftwareQuality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemonstratingSoftwareQuality" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControllerTest.getAllRubricsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemonstratingSoftwareQuality" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="METHOD_NAME" value="getAllRubricsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ControllerTest.standardDeviationCriteriaExisting">
     <configuration name="ControllerTest.maxCriteriaTestExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemonstratingSoftwareQuality" />
       <option name="PACKAGE_NAME" value="" />
@@ -284,13 +271,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ControllerTest.standardDeviationCriteriaExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemonstratingSoftwareQuality" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="standardDeviationCriteriaExisting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.standardDeviationCriteriaNonExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemonstratingSoftwareQuality" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="standardDeviationCriteriaNonExisting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest.standardDeviationCriteriaExisting" />
+        <item itemvalue="JUnit.ControllerTest.standardDeviationCriteriaNonExisting" />
         <item itemvalue="JUnit.ControllerTest.minCriteriaTestNonExisting" />
         <item itemvalue="JUnit.ControllerTest.maxCriteriaTestExisting" />
         <item itemvalue="JUnit.ControllerTest.maxCriteriaTestNonExisting" />
-        <item itemvalue="JUnit.All in DemonstratingSoftwareQuality" />
-        <item itemvalue="JUnit.ControllerTest.getAllRubricsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -308,35 +315,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.07 at 16h 27m 10s.xml">
-      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 29m 32s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.07 at 16h 29m 08s.xml">
-      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 30m 50s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.07 at 16h 29m 31s.xml">
-      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 31m 52s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_getAllRubricsTest - 2021.05.07 at 16h 30m 37s.xml">
-      <configuration name="ControllerTest.getAllRubricsTest" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 32m 31s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.07 at 16h 30m 44s.xml">
-      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 33m 08s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.07 at 16h 31m 49s.xml">
-      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 33m 35s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_maxCriteriaTestNonExisting - 2021.05.07 at 16h 46m 36s.xml">
-      <configuration name="ControllerTest.maxCriteriaTestNonExisting" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 34m 44s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_maxCriteriaTestNonExisting - 2021.05.07 at 16h 47m 47s.xml">
-      <configuration name="ControllerTest.maxCriteriaTestNonExisting" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 35m 34s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_maxCriteriaTestExisting - 2021.05.07 at 16h 47m 51s.xml">
-      <configuration name="ControllerTest.maxCriteriaTestExisting" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 36m 42s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_minCriteriaTestNonExisting - 2021.05.07 at 16h 50m 34s.xml">
-      <configuration name="ControllerTest.minCriteriaTestNonExisting" configurationId="JUnit" />
+    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 37m 25s.xml">
+      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -367,10 +374,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.15903614" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28433734" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.12446352" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.20100144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,20 +514,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
+    <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="498" column="6" lean-forward="true" selection-start-line="498" selection-start-column="6" selection-end-line="500" selection-end-column="7" />
+        <state relative-caret-position="332">
+          <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="137" column="49" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+        <state relative-caret-position="420">
+          <caret line="544" column="58" lean-forward="true" selection-start-line="544" selection-start-column="58" selection-end-line="544" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

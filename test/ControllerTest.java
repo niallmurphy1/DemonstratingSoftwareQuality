@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -143,6 +144,70 @@ public class ControllerTest {
         rubrics.add(testRubric());
         assertEquals(controller.getMinOfCriteria(testRubric().getStudents(), "COA"), "4");
     }
+
+    @Test
+    public void standardDeviationCriteriaNonExisting(){
+        rubrics.add(testRubric());
+        assertEquals(controller.getStandardDeviationOfSpecificCriteria(testRubric().getStudents(), ""), "Criterion not found!");
+    }
+
+
+
+    @Test
+    public void standardDeviationCriteriaExistingSameValues(){
+
+        rubrics.add(testRubric());
+        rubrics.add(testRubric());
+        rubrics.add(testRubric());
+        ArrayList<Student> students = new ArrayList<>();
+
+        for(Rubric rubric: rubrics){
+            students.addAll(rubric.getStudents());
+        }
+        //Should return NaN as standard deviation, all same data
+        assertEquals(controller.getStandardDeviationOfSpecificCriteria(students, "COA"), "NaN");
+
+
+    }
+
+
+    @Test
+    public void standardDeviationCriteriaExisting(){
+
+        ArrayList<Student> testStudents = new ArrayList<>();
+
+        ArrayList<StudentGrade> exampleGrades = new ArrayList<>();
+        StudentGrade exampleGrade1 = new StudentGrade("Account Check", 5);
+
+        exampleGrades.add(exampleGrade1);
+
+        Student testStudent = new Student("Chelsea Blakemore", exampleGrades);
+
+        testStudents.add(testStudent);
+
+        StudentGrade anotherGrade1 = new StudentGrade("Account Check", 4);
+        StudentGrade anotherGrade2 = new StudentGrade("Account Check", 3);
+        StudentGrade anotherGrade3 = new StudentGrade("Account Check", 5);
+        StudentGrade anotherGrade4 = new StudentGrade("Account Check", 5);
+
+        Student testStudent2 = new Student("Ronald McDonald", new ArrayList<StudentGrade>(Arrays.asList(anotherGrade1)));
+        Student testStudent3 = new Student("Maureen Ponderossa",  new ArrayList<StudentGrade>(Arrays.asList(anotherGrade2)));
+        Student testStudent4 = new Student("Dennis Reynolds",  new ArrayList<StudentGrade>(Arrays.asList(anotherGrade3)));
+        Student testStudent5 = new Student("Charlie Kelly",  new ArrayList<StudentGrade>(Arrays.asList(anotherGrade4)));
+
+
+        testStudents.add(testStudent2);
+        testStudents.add(testStudent3);
+        testStudents.add(testStudent4);
+        testStudents.add(testStudent5);
+
+
+        assertEquals(controller.getStandardDeviationOfSpecificCriteria(testStudents, "Account Check"), "0.7999999999999999");
+
+
+    }
+
+
 
 
 }
