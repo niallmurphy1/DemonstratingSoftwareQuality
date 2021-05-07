@@ -23,6 +23,23 @@ After some more testing and addditional methods for getting the statistics of a 
 
 ![3rd progression](https://raw.githubusercontent.com/niallmurphy1/DemonstratingSoftwareQuality/test_coverage_metric/screenshots/test_coverage_screenshot_56.png "Figure 4: third progression")_Figure 4_
 
+I added another test to round up the testing coverage to 60%. I would have like to get into the 70s or 80s but I had the scanner scanning within some methods and the test Coverage wouldn't allow me to enter input, but I was satisfied that the code worked. See last progression, Figure 5 below. 
+
+![3rd progression](https://raw.githubusercontent.com/niallmurphy1/DemonstratingSoftwareQuality/test_coverage_metric/screenshots/test_coverage_60.png "Figure 5: Final progression")_Figure 5_
+
+### Coverage tool thoughts
+I found this Coverage tool to be quite useful as it shows you exactly where your code is lacking in testing, which is especially useful for unit testing. The Coverage tool shows you exactly what lines you missed by highlighting them in red in the class. See Figure 6 below.
+
+![Highlighted code](https://raw.githubusercontent.com/niallmurphy1/DemonstratingSoftwareQuality/test_coverage_metric/screenshots/lines_missing_highlighted.png "Figure 6: highlighted test missing")_Figure 6_
+
+
+The tool also shows you a class-by-class breakdown of what code is covered, which may seem obvious, but is very handy for looking at different packages and entities respectively. See Figure 7 below.
+
+![entity breakdown](https://raw.githubusercontent.com/niallmurphy1/DemonstratingSoftwareQuality/test_coverage_metric/screenshots/entities_tested_breakdown.png "Figure 7: Entity breakdown")_Figure 7_
+
+
+
+
 
 
 
