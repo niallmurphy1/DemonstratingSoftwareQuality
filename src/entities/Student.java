@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class Student {
 
     private String name;
-private ArrayList<StudentGrade> grades;
+    private ArrayList<StudentGrade> grades;
 
     public Student() {
+        name = "";
         grades = new ArrayList<>();
     }
 
