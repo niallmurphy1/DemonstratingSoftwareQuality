@@ -519,7 +519,7 @@ public class Controller {
         System.out.println(sumOfGrades);
 
         if(gradesMatchingCriterion.size() == 0){
-            result = "Criterion not found!";
+             return "Criterion not found!";
 
         }else{
 
@@ -549,15 +549,19 @@ public class Controller {
             sq = sd / gradeValues.size();
             res = Math.sqrt(sq);
             result = String.valueOf(res);
+            return "Standard Deviation for " + criteriaName+ ": " +result;
         }
 
-        return result;
+
 
     }
 
     public String showCriteriaStats(ArrayList<Student> students, String criteriaName){
 
-        return ";";
+        return getAverageOfSpecificCriteria(students, criteriaName)
+                + "\n" + getMaxOfCriteria(students, criteriaName)
+                + "\n" + getMinOfCriteria(students, criteriaName)
+                + '\n' + getStandardDeviationOfSpecificCriteria(students, criteriaName);
 
     }
 

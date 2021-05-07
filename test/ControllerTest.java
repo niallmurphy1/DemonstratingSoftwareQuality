@@ -164,8 +164,7 @@ public class ControllerTest {
         for(Rubric rubric: rubrics){
             students.addAll(rubric.getStudents());
         }
-        //Should return NaN as standard deviation, all same data
-        assertEquals(controller.getStandardDeviationOfSpecificCriteria(students, "COA"), "NaN");
+        assertEquals(controller.getStandardDeviationOfSpecificCriteria(students, "COA"), "Standard Deviation for COA: 0.0");
 
 
     }
@@ -202,7 +201,7 @@ public class ControllerTest {
         testStudents.add(testStudent5);
 
 
-        assertEquals(controller.getStandardDeviationOfSpecificCriteria(testStudents, "Account Check"), "0.7999999999999999");
+        assertEquals(controller.getStandardDeviationOfSpecificCriteria(testStudents, "Account Check"), "Standard Deviation for Account Check: 0.7999999999999999");
 
 
     }
