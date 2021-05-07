@@ -4,6 +4,7 @@ import entities.Student;
 import entities.StudentGrade;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
@@ -13,6 +14,8 @@ public class ControllerTest {
 
 
     final Controller controller = new Controller();
+
+    final ArrayList<Rubric> rubrics = new ArrayList<>();
 
 
     Rubric testRubric(){
@@ -39,6 +42,7 @@ public class ControllerTest {
         testStudents.add(testStudent);
 
         return new Rubric("Accounting", testStudents, criteria);
+
     }
 
    @Test
@@ -64,13 +68,29 @@ public class ControllerTest {
    }
 
    @Test
-    public void maxGradeRubric(){
+    public void maxGradeRubricTest(){
        assertEquals(controller.getMaxGradeRubric(testRubric()), 5);
 
    }
 
    @Test
-    public void getStandardDeviationRubric(){
+    public void getStandardDeviationRubricTest(){
         assertEquals(controller.getStandardDeviationOfRubric(testRubric()), .7071067811865476, 0.00);
+   }
+
+   @Test
+    public void showRubricStatsNonExistingRubricTest(){
+        rubrics.add(testRubric());
+        assertEquals(controller.showRubricStats("Software Design Patterns", rubrics), "Rubric not found!");
+   }
+
+   @Test public void showRubricStatsExistingRubric(){
+        rubrics.add(testRubric());
+
+        String expectedResult = "Rubric max: 5"
+                + "\nRubric min: 3"
+                +"\nRubric average: 4.0"
+                +"\nRubric standard deviation: 0.7071067811865476";
+        assertEquals(controller.showRubricStats("Accounting", rubrics), expectedResult);
    }
 }

@@ -17,7 +17,7 @@ public class Controller {
     public Controller(){
 
 
-        //take these out to run Controller tests
+        //TODO: comment these methods out to run Controller tests
         //initialRubrics();
         //mainMenu();
 
@@ -103,7 +103,12 @@ public class Controller {
                 break;
 
             case("5"):
-                showRubricStats();
+                Scanner scanner = new Scanner(System.in);
+                System.out.println(" Enter topic name for the Rubric you would like to see the stats of:" );
+
+                String rubricName = scanner.nextLine();
+
+                showRubricStats(rubricName, rubrics);
                 break;
 
             default:
@@ -272,8 +277,23 @@ public class Controller {
 
     }
 
-    public void showRubricStats(){
+    public String showRubricStats(String rubricName, ArrayList<Rubric> rubrics){
+        String response = "";
 
+        for(Rubric rubric: rubrics){
+
+            if(rubric.getTopicName().equalsIgnoreCase(rubricName)){
+
+               response = "Rubric max: " + getMaxGradeRubric(rubric)
+                       +"\nRubric min: " + getMinGradeInRubric(rubric)
+                       +"\nRubric average: " + getAverageOfRubric(rubric)
+                       +"\nRubric standard deviation: " + getStandardDeviationOfRubric(rubric);
+
+            }else{
+                response = "Rubric not found!";
+            }
+        }
+        return response;
     }
 
     public double getAverageOfRubric(Rubric rubric){
