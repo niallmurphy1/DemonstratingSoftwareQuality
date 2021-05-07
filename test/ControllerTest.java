@@ -106,7 +106,7 @@ public class ControllerTest {
 
 
    @Test
-   public void  AverageCriteriaTestNonExistingCriteria(){
+   public void  averageCriteriaTestNonExistingCriteria(){
         rubrics.add(testRubric());
 
         assertEquals(controller.getAverageOfSpecificCriteria(testRubric().getStudents(), ""), "Criterion not found!");
@@ -114,8 +114,22 @@ public class ControllerTest {
    }
 
    @Test
-    public void AverageCriteriaTestExistingCriteria(){
+    public void averageCriteriaTestExistingCriteria(){
         rubrics.add(testRubric());
         assertEquals(controller.getAverageOfSpecificCriteria(testRubric().getStudents(), "Account check"), "Average of criteria Account check: 5");
    }
+
+
+   @Test
+   public void maxCriteriaTestNonExisting(){
+        rubrics.add(testRubric());
+        assertEquals(controller.getMaxOfCriteria(testRubric().getStudents(), ""), "Criterion not found!");
+   }
+
+   @Test
+    public void maxCriteriaTestExisting(){
+       rubrics.add(testRubric());
+       assertEquals(controller.getMaxOfCriteria(testRubric().getStudents(), "COA"), "4");
+   }
+
 }

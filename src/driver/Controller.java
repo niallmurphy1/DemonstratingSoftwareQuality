@@ -18,10 +18,9 @@ public class Controller {
 
 
         //TODO: comment these methods out to run Controller tests
-        initialRubrics();
+        //initialRubrics();
        // mainMenu();
 
-        System.out.println( getAverageOfSpecificCriteria(rubrics.get(0).getStudents(), "Account check"));
     }
 
     private ArrayList<Rubric> rubrics = new ArrayList<>();
@@ -412,7 +411,7 @@ public class Controller {
 
     public String getAverageOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
 
-        String result ="";
+        String result;
         ArrayList<StudentGrade> gradesMatchingCriterion = new ArrayList<>();
         int sumOfGrades = 0;
 
@@ -440,15 +439,41 @@ public class Controller {
 
     }
 
-    public void getMaxOfCriteria(ArrayList<Student> students, String criteriaName){}
+    public String getMaxOfCriteria(ArrayList<Student> students, String criteriaName){
 
+        ArrayList<Integer> grades = new ArrayList<>();
+        String result;
 
-    public void getMinOfCriteria(ArrayList<Student> students, String criteriaName){}
+        for(Student student: students){
 
+            for(StudentGrade studentGrade: student.getGrades()){
 
-    public void getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
+                if(studentGrade.getCriterion().equalsIgnoreCase(criteriaName)){
 
+                    grades.add(studentGrade.getGrade());
+                }
+            }
+        }
+
+        if(grades.size() == 0){
+            return "Criterion not found!";
+        }
+        else {
+
+            return String.valueOf(grades.stream()
+                    .reduce(Integer::max)
+                    .get());
+        }
     }
+
+
+
+//    public String getMinOfCriteria(ArrayList<Student> students, String criteriaName){}
+//
+//
+//    public String getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
+//
+//    }
 
     public void addStudents(Rubric rubric){
 
