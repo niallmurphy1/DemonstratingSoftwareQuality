@@ -84,7 +84,8 @@ public class ControllerTest {
         assertEquals(controller.showRubricStats("Software Design Patterns", rubrics), "Rubric not found!");
    }
 
-   @Test public void showRubricStatsExistingRubric(){
+   @Test
+   public void showRubricStatsExistingRubric(){
         rubrics.add(testRubric());
 
         String expectedResult = "Rubric max: 5"
@@ -92,5 +93,12 @@ public class ControllerTest {
                 +"\nRubric average: 4.0"
                 +"\nRubric standard deviation: 0.7071067811865476";
         assertEquals(controller.showRubricStats("Accounting", rubrics), expectedResult);
+   }
+
+
+   @Test
+   public void  AverageCriteriaTestNonExistingCriteria(){
+        rubrics.add(testRubric());
+
    }
 }

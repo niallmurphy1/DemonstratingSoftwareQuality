@@ -59,6 +59,11 @@ public class Controller {
 
         System.out.println(exampleRubric.toString());
 
+        grades.add(exampleGrade1);
+        grades.add(exampleGrade2);
+        grades.add(exampleGrade3);
+        grades.add(exampleGrade4);
+        students.add(exampleStudent);
         rubrics.add(exampleRubric);
 
     }
@@ -401,6 +406,23 @@ public class Controller {
         return res;
     }
 
+
+    public void getAverageOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
+
+
+
+    }
+
+    public void getMaxOfCriteria(){}
+
+
+    public void getMinOfCriteria(){}
+
+
+    public void getStandardDeviationOfSpecificCriteria(){
+
+    }
+
     public void addStudents(Rubric rubric){
 
         Scanner scanner = new Scanner(System.in);
@@ -455,9 +477,5 @@ public class Controller {
 
 
     }
-
-
-
-
 
 }
