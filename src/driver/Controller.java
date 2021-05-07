@@ -18,9 +18,10 @@ public class Controller {
 
 
         //TODO: comment these methods out to run Controller tests
-       // initialRubrics();
+        initialRubrics();
        // mainMenu();
 
+        System.out.println( getAverageOfSpecificCriteria(rubrics.get(0).getStudents(), "Account check"));
     }
 
     private ArrayList<Rubric> rubrics = new ArrayList<>();
@@ -420,11 +421,19 @@ public class Controller {
             for(StudentGrade studentGrade: student.getGrades()){
 
                 if(studentGrade.getCriterion().equalsIgnoreCase(criteriaName)){
+                    System.out.println("Grades:  " + studentGrade.getCriterion());
                     gradesMatchingCriterion.add(studentGrade);
-                }else{
-                    result = "Criterion not found!";
+                    sumOfGrades = sumOfGrades +studentGrade.getGrade();
                 }
             }
+        }
+
+        if(gradesMatchingCriterion.size() == 0){
+            result = "Criterion not found!";
+
+        }
+        else{
+            result = "Average of criteria "+criteriaName+": " + sumOfGrades/gradesMatchingCriterion.size();
         }
 
         return result;

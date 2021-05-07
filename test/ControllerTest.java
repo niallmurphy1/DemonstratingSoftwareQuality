@@ -112,4 +112,10 @@ public class ControllerTest {
         assertEquals(controller.getAverageOfSpecificCriteria(testRubric().getStudents(), ""), "Criterion not found!");
 
    }
+
+   @Test
+    public void AverageCriteriaTestExistingCriteria(){
+        rubrics.add(testRubric());
+        assertEquals(controller.getAverageOfSpecificCriteria(testRubric().getStudents(), "Account check"), "Average of criteria Account check: 5");
+   }
 }
