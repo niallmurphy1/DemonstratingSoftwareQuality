@@ -74,8 +74,6 @@ public class Controller {
 
     public void mainMenu(){
 
-
-
         System.out.println("\nWelcome to the Student Grade hub!");
         System.out.println("-------------------------------");
 
@@ -107,7 +105,10 @@ public class Controller {
                 break;
 
             case("4"):
-                getRubricByName();
+                Scanner sc = new Scanner(System.in);
+                System.out.println(" Enter topic name for the Rubric you want to see: " );
+                String topicName = sc.nextLine();
+                getRubricByName(topicName, rubrics);
                 break;
 
             case("5"):
@@ -253,11 +254,9 @@ public class Controller {
 
     }
 
-    public void getRubricByName(){
-        Scanner scan = new Scanner(System.in);
+    public String getRubricByName(String topicName, ArrayList<Rubric> rubrics){
 
-        System.out.println("\nEnter topic name to view Rubric!");
-        String topicName = scan.nextLine();
+    String result ="";
 
         for(Rubric rubric: rubrics){
 
@@ -266,22 +265,18 @@ public class Controller {
                 System.out.println("Rubric found!\n");
                 System.out.println(rubric.toString());
 
+                result = rubric.toString();
                 System.out.println("\nReturn to main menu? y/n");
 
-                if(scan.next().equalsIgnoreCase("y")){
-                    mainMenu();
-                }else {
-                    System.out.println("Goodbye!");
-                }
+
             }else {
-                System.out.println("Could not find Rubric! Return to main menu? y/n");
-                if(scan.next().equalsIgnoreCase("y")){
-                    mainMenu();
-                }else {
-                    System.out.println("Goodbye!");
-                }
+                System.out.println("Could not find Rubric!");
+                result = "Could not find Rubric!";
+
             }
         }
+
+        return result;
 
     }
 

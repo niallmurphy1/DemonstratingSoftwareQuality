@@ -47,7 +47,18 @@ public class ControllerTest {
     }
 
     @Test
-    public void initalRubricsTest(){
+    public void getRubricByName(){
+        ArrayList<Rubric> rubrics = new ArrayList<>();
+        rubrics.add(testRubric());
+        assertEquals(controller.getRubricByName("Accounting", rubrics), testRubric().toString());
+
+    }
+
+
+
+
+    @Test
+    public void initialRubricsTest(){
 
         ArrayList<Rubric> rubrics = new ArrayList<>();
         rubrics.add(testRubric());

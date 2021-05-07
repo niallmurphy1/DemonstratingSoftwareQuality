@@ -10,11 +10,6 @@ public class StudentGrade {
         this.grade = grade;
     }
 
-    public StudentGrade(){
-
-    }
-
-
     public String getCriterion() {
         return criterion;
     }
