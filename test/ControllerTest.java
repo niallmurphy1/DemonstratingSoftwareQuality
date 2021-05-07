@@ -132,4 +132,17 @@ public class ControllerTest {
        assertEquals(controller.getMaxOfCriteria(testRubric().getStudents(), "COA"), "4");
    }
 
+    @Test
+    public void minCriteriaTestNonExisting(){
+        rubrics.add(testRubric());
+        assertEquals(controller.getMinOfCriteria(testRubric().getStudents(), ""), "Criterion not found!");
+    }
+
+    @Test
+    public void minCriteriaTestExisting(){
+        rubrics.add(testRubric());
+        assertEquals(controller.getMinOfCriteria(testRubric().getStudents(), "COA"), "4");
+    }
+
+
 }

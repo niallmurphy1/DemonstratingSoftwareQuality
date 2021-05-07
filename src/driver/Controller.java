@@ -442,7 +442,7 @@ public class Controller {
     public String getMaxOfCriteria(ArrayList<Student> students, String criteriaName){
 
         ArrayList<Integer> grades = new ArrayList<>();
-        String result;
+
 
         for(Student student: students){
 
@@ -468,9 +468,34 @@ public class Controller {
 
 
 
-//    public String getMinOfCriteria(ArrayList<Student> students, String criteriaName){}
-//
-//
+    public String getMinOfCriteria(ArrayList<Student> students, String criteriaName){
+        ArrayList<Integer> grades = new ArrayList<>();
+
+
+        for(Student student: students){
+
+            for(StudentGrade studentGrade: student.getGrades()){
+
+                if(studentGrade.getCriterion().equalsIgnoreCase(criteriaName)){
+
+                    grades.add(studentGrade.getGrade());
+                }
+            }
+        }
+
+        if(grades.size() == 0){
+            return "Criterion not found!";
+        }
+        else {
+
+            return String.valueOf(grades.stream()
+                    .reduce(Integer::min)
+                    .get());
+        }
+
+    }
+
+
 //    public String getStandardDeviationOfSpecificCriteria(ArrayList<Student> students, String criteriaName){
 //
 //    }
