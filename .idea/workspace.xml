@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a797e66-3764-4fa1-9511-0c533dda09f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/StudentTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/StudentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="185">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +88,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="375">
+              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RubricTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="468">
+              <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-57">
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="e#326#327#0" expanded="true" />
@@ -146,8 +149,8 @@
         <option value="$PROJECT_DIR$/test/RubricTest.java" />
         <option value="$PROJECT_DIR$/test/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/driver/Controller.java" />
-        <option value="$PROJECT_DIR$/test/StudentTest.java" />
         <option value="$PROJECT_DIR$/src/entities/Student.java" />
+        <option value="$PROJECT_DIR$/test/StudentTest.java" />
       </list>
     </option>
   </component>
@@ -214,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentTest.nullStudentNameTest">
+  <component name="RunManager" selected="JUnit.All in DemonstratingSoftwareQuality">
     <configuration name="All in DemonstratingSoftwareQuality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemonstratingSoftwareQuality" />
       <option name="PACKAGE_NAME" value="" />
@@ -228,16 +231,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ControllerTest" />
       <option name="METHOD_NAME" value="showRubricStatsExistingRubric" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControllerTest.showRubricStatsNonExistingRubricTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DemonstratingSoftwareQuality" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="METHOD_NAME" value="showRubricStatsNonExistingRubricTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,13 +256,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTest.studentToStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemonstratingSoftwareQuality" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentTest" />
+      <option name="METHOD_NAME" value="studentToStringTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in DemonstratingSoftwareQuality" />
+        <item itemvalue="JUnit.StudentTest.studentToStringTest" />
         <item itemvalue="JUnit.StudentTest.nullStudentNameTest" />
         <item itemvalue="JUnit.StudentTest.nullStudentGradeTest" />
-        <item itemvalue="JUnit.All in DemonstratingSoftwareQuality" />
         <item itemvalue="JUnit.ControllerTest.showRubricStatsExistingRubric" />
-        <item itemvalue="JUnit.ControllerTest.showRubricStatsNonExistingRubricTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,9 +290,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 40m 28s.xml">
-      <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ControllerTest_getStandardDeviationRubric - 2021.05.07 at 00h 42m 36s.xml">
       <configuration name="ControllerTest.getStandardDeviationRubric" configurationId="JUnit" />
     </history-entry>
@@ -317,6 +317,9 @@
     <history-entry file="StudentTest_nullStudentNameTest - 2021.05.07 at 13h 31m 06s.xml">
       <configuration name="StudentTest.nullStudentNameTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentTest_nullStudentNameTest - 2021.05.07 at 13h 32m 25s.xml">
+      <configuration name="StudentTest.nullStudentNameTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,14 +344,14 @@
       <window_info anchor="bottom" id="Messages" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27228916" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27228916" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25301206" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25301206" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.38483548" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -361,7 +364,7 @@
     </layout>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620389107689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620391263207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/entities/StudentGrade.java" />
@@ -459,19 +462,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RubricTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-57">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#326#327#0" expanded="true" />
@@ -488,15 +481,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RubricTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="185">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
