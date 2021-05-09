@@ -18,8 +18,8 @@ public class Controller {
 
 
         //TODO: comment these methods out to run Controller tests
-        initialRubrics();
-        mainMenu();
+       //initialRubrics();
+        // mainMenu();
 
     }
 

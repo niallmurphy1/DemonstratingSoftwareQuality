@@ -2,6 +2,7 @@
   <library name="hamcrest-2.2">
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/hamcrest-2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/junit-4.13.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
