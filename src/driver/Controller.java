@@ -17,10 +17,13 @@ public class Controller {
     public Controller(){
 
 
-        //TODO: comment these methods out to run Controller tests
-       //initialRubrics();
-        // mainMenu();
 
+
+    }
+
+    private void runMenu() {
+        initialRubrics();
+        mainMenu();
     }
 
     private ArrayList<Rubric> rubrics = new ArrayList<>();
@@ -623,8 +626,8 @@ public class Controller {
     }
 
     public static void main(String[] args) {
-        new Controller();
-
+        Controller controller = new Controller();
+        controller.runMenu();
 
     }
 
