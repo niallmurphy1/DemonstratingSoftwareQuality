@@ -18,8 +18,8 @@ public class Controller {
 
 
         //TODO: comment these methods out to run Controller tests
-        //initialRubrics();
-       // mainMenu();
+        initialRubrics();
+        mainMenu();
 
     }
 
@@ -84,6 +84,7 @@ public class Controller {
         System.out.println("#3 Add a criterion to a Rubric ");
         System.out.println("#4 Find a Rubric by name");
         System.out.println("#5 Get Rubric statistics");
+        System.out.println("#6 Get Criterion stats");
         System.out.println("-------------------------------");
 
 
@@ -120,9 +121,17 @@ public class Controller {
                 showRubricStats(rubricName, rubrics);
                 break;
 
+            case("6"):
+                Scanner scanner1 = new Scanner(System.in);
+                System.out.println(" Enter criterion name you would like to see the stats of:" );
+
+                String criterionName = scanner1.nextLine();
+
+                showCriteriaStats(students, criterionName);
+
             default:
                 System.out.println("That is not a permitted response!\n\n");
-                //mainMenu();
+                mainMenu();
                 break;
         }
     }
@@ -520,9 +529,7 @@ public class Controller {
 
             ArrayList<Integer> gradeValues = new ArrayList<>();
 
-            System.out.println("Student grades: "+ gradesMatchingCriterion);
-            System.out.println("Student grades: size " + gradesMatchingCriterion.size());
-            System.out.println("sum of grades: " + sumOfGrades);
+
             double mean = (sumOfGrades/Double.valueOf(gradesMatchingCriterion.size()));
 
             for (int i = 0; i < gradesMatchingCriterion.size(); i++) {
@@ -576,6 +583,7 @@ public class Controller {
 
             newStudent.getGrades().add(new StudentGrade(criterion, scanner.nextInt()));
             rubric.getStudents().add(newStudent);
+            students.add(newStudent);
 
 
         }
@@ -594,6 +602,9 @@ public class Controller {
 
 
     }
+
+
+
 
 
 
