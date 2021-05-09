@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a797e66-3764-4fa1-9511-0c533dda09f9" name="Default Changelist" comment="" />
+    <list default="true" id="7a797e66-3764-4fa1-9511-0c533dda09f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/driver/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/driver/Controller.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,23 +12,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="103" />
+    <option name="myElementSize" value="96" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="244">
+              <caret line="607" column="4" selection-start-line="607" selection-start-column="4" selection-end-line="607" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -80,8 +82,8 @@
         <option value="$PROJECT_DIR$/test/StudentTest.java" />
         <option value="$PROJECT_DIR$/src/entities/StudentGrade.java" />
         <option value="$PROJECT_DIR$/test/ControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/driver/Controller.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/driver/Controller.java" />
       </list>
     </option>
   </component>
@@ -148,6 +150,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -242,12 +245,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 39m 17s.xml">
-      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 39m 41s.xml">
-      <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ControllerTest_standardDeviationCriteriaExisting - 2021.05.07 at 17h 43m 09s.xml">
       <configuration name="ControllerTest.standardDeviationCriteriaExisting" configurationId="JUnit" />
     </history-entry>
@@ -272,6 +269,12 @@
     <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.09 at 21h 57m 52s.xml">
       <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.09 at 22h 03m 39s.xml">
+      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DemonstratingSoftwareQuality - 2021.05.09 at 22h 05m 12s.xml">
+      <configuration name="All in DemonstratingSoftwareQuality" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,8 +287,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24034335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -294,12 +298,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31686747" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17951807" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48192772" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.14337349" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
@@ -318,7 +322,7 @@
     <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$Controller.ic" NAME="Controller Coverage Results" MODIFIED="1620416715196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>driver.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620594212744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DemonstratingSoftwareQuality$All_in_DemonstratingSoftwareQuality.ic" NAME="All in DemonstratingSoftwareQuality Coverage Results" MODIFIED="1620594287034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
@@ -391,17 +395,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="607" column="4" selection-start-line="607" selection-start-column="4" selection-end-line="607" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -460,7 +464,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
